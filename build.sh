@@ -1,0 +1,1 @@
+gcc main.c -o occ -std=c99 -trigraphs -Wall  -Wno-trigraphs
