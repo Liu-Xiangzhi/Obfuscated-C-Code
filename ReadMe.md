@@ -53,7 +53,7 @@ The trigraph sequences is like the escape character, which use three characters 
 |??)|]|
 |??'|^|
 |??<|{|
-|??!|||
+|??!|\||
 |??>|}|
 |??-|~|
 
@@ -142,7 +142,7 @@ int main(int argc，char* argv[]){WHAT_THE_FUCK(&3
 ```
 
 ### Universal Character Name and Hexadecimal Character of C language
-Universal Character Name is the way of representation of Unicode in C language, which form is `\uxxxx` or `\Uxxxxxxxx`, where `x` is a hex-digit. The value of Universal Character Name can be any code point of all possible Unicode except those can be represented by ASCII except `$` and `@`.
+Universal Character Name is the way of representation of Unicode in C language, which form is `\uxxxx` or `\Uxxxxxxxx`, where `x` is a hex-digit. The value of Universal Character Name can be any code point of all possible Unicode except those can be represented by ASCII(except for `$` and `@`).
 
 Hexadecimal Character is very simple but not such usual, which represents character by hex-digit. e.g. the ASCII value of `A` is 41, so it can be represented as `\x41` by Hexadecimal Character.
 

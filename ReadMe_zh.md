@@ -53,7 +53,7 @@ int main(argc,argv) int argc; char* argv??(:>;??<WHAT_THE_FUCK(&3
 |??)|]|
 |??'|^|
 |??<|{|
-|??!|||
+|??!|\||
 |??>|}|
 |??-|~|
 
@@ -126,7 +126,7 @@ int f(int x, double y);
 // K&R style
 int f(x,y) int x; int y;
 ```
-但在 C89 标准中不在推荐，在 C23 标准中彻底移除。
+但在 C89 标准后不再推荐，在 C23 标准中彻底移除。
 
 代码 4 经过 K&R 风格转换后的等价形式代码 5 为：
 ``` C
@@ -140,7 +140,7 @@ int main(int argc，char* argv[]){WHAT_THE_FUCK(&3
 ```
 
 ### C 语言中的 Universal Character Name 与 hexadecimal character
-Universal Character Name 是 C 语言中用于表达 Unicode 的方式，其形式为 `\uxxxx` 或 `\Uxxxxxxxx`，其中 `x` 表示一个十六进制数字。其取值可以是所有 Unicode 码点，除去可用 ASCII 表示的字符，再加上 `$` 和 `@`。
+Universal Character Name 是 C 语言中用于表达 Unicode 的方式，其形式为 `\uxxxx` 或 `\Uxxxxxxxx`，其中 `x` 表示一个十六进制数字。其取值可以是所有 Unicode 码点，除去可用 ASCII 表示的字符（`$` 和 `@`除外）。
 
 Hexadecimal Character 很简单但并不是很常见，就是用十六进制数表示字符。如字符`A`的十六进制 ASCII 值为 41，那么可以用 Hexadecimal Character 表示为 `\x41`。
 
